@@ -12,4 +12,4 @@ Text assets will be automatically extracted and can be found in the Asset Studio
 
 **Optional:** First run the 'assetlist.py' Python script. (See 'requirements.txt' for the packages needed to run this script.) This will generate a file, 'assetlist.txt', that contains a list of all text assets currently in the game. Then copy this list into 'Program.cs'. This would only be necessary if a new text asset were introduced in a future update.
 
-**Note:** In 'Program.cs', `download` should be set to `true` if a hotfix is released.
+**Note:** In 'Program.cs', when `download` is set to `false`, the assets are extracted from the copy of the app stored locally; otherwise, assets are downloaded. When a hotfix is released, downloaded assets should be more up-to-date than those stored locally.

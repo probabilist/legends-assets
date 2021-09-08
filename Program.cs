@@ -40,7 +40,7 @@ namespace LegendsData
                 }
             }
 
-            bool download = false;
+            bool download = true;
 
             if (download)
             {
