@@ -25,7 +25,8 @@ namespace LegendsData
         //const int LAST_KNOWN_DEFAULT = 7587;
         //const int LAST_KNOWN_DEFAULT = 7591;
         //const int LAST_KNOWN_DEFAULT = 7592;
-        const int LAST_KNOWN_DEFAULT = 7593;
+        //const int LAST_KNOWN_DEFAULT = 7593;
+        const int LAST_KNOWN_DEFAULT = 8095;
 
         public static AssetsManager assetsManager = new AssetsManager();
 
@@ -356,7 +357,8 @@ namespace LegendsData
         {
             try
             {
-                var url = string.Format("http://cdn0.client-files.proj-red.emeraldcitygames.ca/endpoints/stable1/v{0}/stable1-OSX-release-endpoint.json?ts=timestamp", buildNumber);
+                //var url = string.Format("http://cdn0.client-files.proj-red.emeraldcitygames.ca/endpoints/stable1/v{0}/stable1-OSX-release-endpoint.json?ts=timestamp", buildNumber);
+                var url = string.Format("http://cdn0.client-files.proj-red.emeraldcitygames.ca/endpoints/stable2/v{0}/stable1-OSX-release-endpoint.json?ts=timestamp", buildNumber);
 
                 using var client = new HttpClient();
 
