@@ -26,7 +26,9 @@ namespace LegendsData
         //const int LAST_KNOWN_DEFAULT = 7591;
         //const int LAST_KNOWN_DEFAULT = 7592;
         //const int LAST_KNOWN_DEFAULT = 7593;
-        const int LAST_KNOWN_DEFAULT = 8095;
+        //const int LAST_KNOWN_DEFAULT = 8095;
+        //const int LAST_KNOWN_DEFAULT = 8105;
+        const int LAST_KNOWN_DEFAULT = 8111;
 
         public static AssetsManager assetsManager = new AssetsManager();
 
