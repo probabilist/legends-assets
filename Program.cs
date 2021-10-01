@@ -34,7 +34,8 @@ namespace LegendsData
         //const int LAST_KNOWN_DEFAULT = 8123;
         //const int LAST_KNOWN_DEFAULT = 8132;
         //const int LAST_KNOWN_DEFAULT = 8136;
-        const int LAST_KNOWN_DEFAULT = 8138;
+        //const int LAST_KNOWN_DEFAULT = 8138;
+        const int LAST_KNOWN_DEFAULT = 8139;
 
         public static AssetsManager assetsManager = new AssetsManager();
 
@@ -241,7 +242,7 @@ namespace LegendsData
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine("failed!");
                 return;
@@ -284,6 +285,25 @@ namespace LegendsData
             convertBytesToJson("GSDefaultBridgeCrew");
             convertBytesToJson("GSDeviceData");
             convertBytesToJson("GSDirectives");
+            convertBytesToJson("GSDungeonBattleNodes");
+            convertBytesToJson("GSDungeonBattlePool");
+            convertBytesToJson("GSDungeonBattleRewardScale");
+            convertBytesToJson("GSDungeonCombatScenePool");
+            convertBytesToJson("GSDungeonEnemyDifficulty");
+            convertBytesToJson("GSDungeonEnvironment");
+            convertBytesToJson("GSDungeonEnvironmentPool");
+            convertBytesToJson("GSDungeonFactionPool");
+            convertBytesToJson("GSDungeonLevel");
+            convertBytesToJson("GSDungeonLevelRewardScale");
+            convertBytesToJson("GSDungeonMaps");
+            convertBytesToJson("GSDungeonNodeList");
+            convertBytesToJson("GSDungeonNodeMapPool");
+            convertBytesToJson("GSDungeonPowerUp");
+            convertBytesToJson("GSDungeonProperties");
+            convertBytesToJson("GSDungeonResourceRewardScale");
+            convertBytesToJson("GSDungeonRewardPool");
+            convertBytesToJson("GSDungeonRewards");
+            convertBytesToJson("GSDungeonUpgrades");
             convertBytesToJson("GSEffect");
             convertBytesToJson("GSEffectType");
             convertBytesToJson("GSEpisodes");
@@ -386,7 +406,7 @@ namespace LegendsData
 
             var tasks = new List<Task>();
 
-            for (int i = last_known; i < last_known + 10; i++)
+            for (int i = last_known; i < last_known + 1; i++)
             {
                 tasks.Add(getConfig(i).ContinueWith((url) =>
                 {
