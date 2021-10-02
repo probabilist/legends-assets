@@ -2,7 +2,7 @@
  
 This project is for extracting text assets from Star Trek: Legends. These instructions assume you are working on a Mac with Star Trek: Legends installed, and that you have an active Apple Arcade subscription.
 
-First, download the Asset Studios C# solution (available at https://github.com/TemporalAgent7/AssetStudio/tree/legends). Inside the Asset Studios solution, find 'LegendsData/Program.cs' and replace it with the 'Program.cs' file found in this repository.
+First, download the "AssetStudio-legends" C# solution. (The original is available at [this repository](https://github.com/TemporalAgent7/AssetStudio/tree/legends).
 
 Open Star Trek: Legends and let it play a while, giving it time for all the assets to be downloaded.
 
