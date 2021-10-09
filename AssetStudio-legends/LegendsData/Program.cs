@@ -35,7 +35,9 @@ namespace LegendsData
         //const int LAST_KNOWN_DEFAULT = 8132;
         //const int LAST_KNOWN_DEFAULT = 8136;
         //const int LAST_KNOWN_DEFAULT = 8138;
-        const int LAST_KNOWN_DEFAULT = 8139;
+        //const int LAST_KNOWN_DEFAULT = 8139;
+        // const int LAST_KNOWN_DEFAULT = 8145;
+        const int LAST_KNOWN_DEFAULT = 8147;
 
         public static AssetsManager assetsManager = new AssetsManager();
 
@@ -406,7 +408,7 @@ namespace LegendsData
 
             var tasks = new List<Task>();
 
-            for (int i = last_known; i < last_known + 1; i++)
+            for (int i = last_known; i < last_known + 10; i++)
             {
                 tasks.Add(getConfig(i).ContinueWith((url) =>
                 {
