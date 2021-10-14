@@ -18,26 +18,10 @@ namespace LegendsData
 {
     class Program
     {
-        //const int LAST_KNOWN_DEFAULT = 7575;
-        //const int LAST_KNOWN_DEFAULT = 7581;
-        //const int LAST_KNOWN_DEFAULT = 7585;
-        //const int LAST_KNOWN_DEFAULT = 7586;
-        //const int LAST_KNOWN_DEFAULT = 7587;
-        //const int LAST_KNOWN_DEFAULT = 7591;
-        //const int LAST_KNOWN_DEFAULT = 7592;
-        //const int LAST_KNOWN_DEFAULT = 7593;
-        //const int LAST_KNOWN_DEFAULT = 8095;
-        //const int LAST_KNOWN_DEFAULT = 8105;
-        //const int LAST_KNOWN_DEFAULT = 8111;
-        //const int LAST_KNOWN_DEFAULT = 8114;
-        //const int LAST_KNOWN_DEFAULT = 8120;
-        //const int LAST_KNOWN_DEFAULT = 8123;
-        //const int LAST_KNOWN_DEFAULT = 8132;
-        //const int LAST_KNOWN_DEFAULT = 8136;
-        //const int LAST_KNOWN_DEFAULT = 8138;
-        //const int LAST_KNOWN_DEFAULT = 8139;
-        // const int LAST_KNOWN_DEFAULT = 8145;
-        const int LAST_KNOWN_DEFAULT = 8147;
+        //prior builds: 7575, 7581, 7585, 7586, 7587, 7591, 7592, 7593, 8095,
+        //8105, 8111, 8114, 8120, 8123, 8132, 8136, 8138, 8139, 8145, 8147,
+        //8148
+        const int LAST_KNOWN_DEFAULT = 8149;
 
         public static AssetsManager assetsManager = new AssetsManager();
 
@@ -388,7 +372,8 @@ namespace LegendsData
             try
             {
                 //var url = string.Format("http://cdn0.client-files.proj-red.emeraldcitygames.ca/endpoints/stable1/v{0}/stable1-OSX-release-endpoint.json?ts=timestamp", buildNumber);
-                var url = string.Format("http://cdn0.client-files.proj-red.emeraldcitygames.ca/endpoints/stable2/v{0}/stable1-OSX-release-endpoint.json?ts=timestamp", buildNumber);
+                //var url = string.Format("http://cdn0.client-files.proj-red.emeraldcitygames.ca/endpoints/stable2/v{0}/stable1-OSX-release-endpoint.json?ts=timestamp", buildNumber);
+                var url = string.Format("http://cdn0.client-files.proj-red.emeraldcitygames.ca/endpoints/stable2/v{0}/stable2-OSX-release-endpoint.json?ts=timestamp", buildNumber);
 
                 using var client = new HttpClient();
 
