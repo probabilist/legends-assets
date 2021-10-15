@@ -20,8 +20,8 @@ namespace LegendsData
     {
         //prior builds: 7575, 7581, 7585, 7586, 7587, 7591, 7592, 7593, 8095,
         //8105, 8111, 8114, 8120, 8123, 8132, 8136, 8138, 8139, 8145, 8147,
-        //8148
-        const int LAST_KNOWN_DEFAULT = 8149;
+        //8148, 8149
+        const int LAST_KNOWN_DEFAULT = 8154;
 
         public static AssetsManager assetsManager = new AssetsManager();
 
